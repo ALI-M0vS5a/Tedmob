@@ -197,17 +197,17 @@ jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = 
 
 
 # Plugins defined by this project
-keepplayer-android-application = { id = "keepplayer.android.application", version = "unspecified" }
-keepplayer-android-application-compose = { id = "keepplayer.android.application.compose", version = "unspecified" }
-keepplayer-android-application-firebase = { id = "keepplayer.android.application.firebase", version = "unspecified" }
-keepplayer-android-application-flavors = { id = "keepplayer.android.application.flavors", version = "unspecified" }
-keepplayer-android-application-jacoco = { id = "keepplayer.android.application.jacoco", version = "unspecified" }
-keepplayer-android-feature = { id = "keepplayer.android.feature", version = "unspecified" }
-keepplayer-android-hilt = { id = "keepplayer.android.hilt", version = "unspecified" }
-keepplayer-android-library = { id = "keepplayer.android.library", version = "unspecified" }
-keepplayer-android-library-compose = { id = "keepplayer.android.library.compose", version = "unspecified" }
-keepplayer-android-library-jacoco = { id = "keepplayer.android.library.jacoco", version = "unspecified" }
-keepplayer-android-lint = { id = "keepplayer.android.lint", version = "unspecified" }
-keepplayer-android-room = { id = "keepplayer.android.room", version = "unspecified" }
-keepplayer-android-test = { id = "keepplayer.android.test", version = "unspecified" }
-keepplayer-jvm-library = { id = "keepplayer.jvm.library", version = "unspecified" }
+tedmob-android-application = { id = "tedmob.android.application", version = "unspecified" }
+tedmob-android-application-compose = { id = "tedmob.android.application.compose", version = "unspecified" }
+tedmob-android-application-firebase = { id = "tedmob.android.application.firebase", version = "unspecified" }
+tedmob-android-application-flavors = { id = "tedmob.android.application.flavors", version = "unspecified" }
+tedmob-android-application-jacoco = { id = "tedmob.android.application.jacoco", version = "unspecified" }
+tedmob-android-feature = { id = "tedmob.android.feature", version = "unspecified" }
+tedmob-android-hilt = { id = "tedmob.android.hilt", version = "unspecified" }
+tedmob-android-library = { id = "tedmob.android.library", version = "unspecified" }
+tedmob-android-library-compose = { id = "tedmob.android.library.compose", version = "unspecified" }
+tedmob-android-library-jacoco = { id = "tedmob.android.library.jacoco", version = "unspecified" }
+tedmob-android-lint = { id = "tedmob.android.lint", version = "unspecified" }
+tedmob-android-room = { id = "tedmob.android.room", version = "unspecified" }
+tedmob-android-test = { id = "tedmob.android.test", version = "unspecified" }
+tedmob-jvm-library = { id = "tedmob.jvm.library", version = "unspecified" }
