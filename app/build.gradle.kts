@@ -41,6 +41,9 @@ android {
 }
 
 dependencies {
+    implementation(projects.core.datastore)
+    implementation(projects.core.model)
+    implementation(projects.core.data)
 
     implementation(libs.androidx.compose.material3)
     implementation(libs.accompanist.permissions)

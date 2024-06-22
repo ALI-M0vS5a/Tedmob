@@ -17,7 +17,7 @@ android {
 
 dependencies {
     api(libs.androidx.dataStore.core)
-    implementation(project(":core:datastore-proto"))
-    implementation(project(":core:model"))
+    implementation(projects.core.datastoreProto)
+    implementation(projects.core.model)
     testImplementation(libs.kotlinx.coroutines.test)
 }

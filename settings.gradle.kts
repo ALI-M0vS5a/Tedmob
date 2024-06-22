@@ -21,7 +21,9 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Tedmob"
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":app")
 include(":core:datastore")
 include(":core:datastore-proto")
 include(":core:model")
+include(":core:data")
