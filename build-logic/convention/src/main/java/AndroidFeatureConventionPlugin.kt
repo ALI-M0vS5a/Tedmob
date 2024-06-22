@@ -9,8 +9,8 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             pluginManager.apply {
-                apply("keepplayer.android.library")
-                apply("keepplayer.android.hilt")
+                apply("tedmob.android.library")
+                apply("tedmob.android.hilt")
             }
             extensions.configure<LibraryExtension> {
                 defaultConfig {
