@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Tedmob"
 include(":app")
- 
+include(":core:datastore")
+include(":core:datastore-proto")
