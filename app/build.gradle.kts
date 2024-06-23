@@ -72,6 +72,7 @@ dependencies {
     implementation(libs.coil.kt)
     implementation(libs.androidx.material3.android)
     implementation(libs.androidx.navigation.fragment)
+    implementation(libs.androidx.recyclerview)
 
     ksp(libs.hilt.compiler)
 
