@@ -15,6 +15,7 @@ android {
 }
 
 dependencies {
+    api(projects.core.common)
     implementation(projects.core.model)
     api(projects.core.datastore)
     implementation(libs.androidx.core.ktx)

@@ -44,6 +44,7 @@ dependencies {
     implementation(projects.core.datastore)
     implementation(projects.core.model)
     implementation(projects.core.data)
+    implementation(projects.core.common)
 
     implementation(libs.androidx.compose.material3)
     implementation(libs.accompanist.permissions)
@@ -70,6 +71,7 @@ dependencies {
     implementation(libs.kotlinx.coroutines.guava)
     implementation(libs.coil.kt)
     implementation(libs.androidx.material3.android)
+    implementation(libs.androidx.navigation.fragment)
 
     ksp(libs.hilt.compiler)
 
