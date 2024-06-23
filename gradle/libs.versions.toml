@@ -66,6 +66,7 @@ material3Android = "1.2.1"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 material = "1.12.0"
+navigationFragment = "2.7.7"
 
 [libraries]
 accompanist-permissions = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "accompanist" }
@@ -170,6 +171,7 @@ androidx-material3-android = { group = "androidx.compose.material3", name = "mat
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
 
 [bundles]
 media3 = ["androidx-media3-common", "androidx-media3-exoplayer", "androidx-media3-exoplayer-dash", "androidx-media3-exoplayer-hls", "androidx-media3-exoplayer-rtsp", "androidx-media3-ui", "androidx-media3-session"]
