@@ -45,6 +45,7 @@ dependencies {
     implementation(projects.core.model)
     implementation(projects.core.data)
     implementation(projects.core.common)
+    implementation(projects.core.network)
 
     implementation(libs.androidx.compose.material3)
     implementation(libs.accompanist.permissions)
@@ -73,6 +74,7 @@ dependencies {
     implementation(libs.androidx.material3.android)
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.androidx.recyclerview)
+    implementation(libs.material)
 
     ksp(libs.hilt.compiler)
 
