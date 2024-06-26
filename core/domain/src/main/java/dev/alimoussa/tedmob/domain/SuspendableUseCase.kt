@@ -1,4 +1,4 @@
-package dev.alimoussa.tedmob.usecase
+package dev.alimoussa.tedmob.domain
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
