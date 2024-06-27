@@ -48,6 +48,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navOptions
 import dev.alimoussa.tedmob.MainViewModel
 import dev.alimoussa.tedmob.feature.home.HomeRoute
+import dev.alimoussa.tedmob.feature.profile.ProfileRoute
 import dev.alimoussa.tedmob.navigation.TopLevelDestination
 import kotlinx.coroutines.launch
 
@@ -173,7 +174,7 @@ fun TedmobApp(
                         HomeRoute()
                     }
                     composable("Profile_route") {
-
+                        ProfileRoute()
                     }
                 }
             }
