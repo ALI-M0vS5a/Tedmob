@@ -124,8 +124,8 @@ private fun UserProfile(
         )
         ProfileDetail(
             "Phone",
-            "+1234567890",
-            onClick = { context.dialPhone("+1234567890") }
+            "+96178848044",
+            onClick = { context.dialPhone("+96178848044") }
         )
 
         Spacer(modifier = Modifier.height(24.dp))

@@ -7,17 +7,22 @@ import android.widget.Toast
 
 fun Context.sendEmail(
     recipient: String,
-    subject: String = "Inquiry from Your Business Name",
+    subject: String = "Lorem Ipsum Dolor Sit Amet",
     message: String = """
-        Dear [Recipient Name],
+        Dear John Doe,
 
-        Thank you for your continued partnership. We are writing to discuss or inform you about a matter of importance related to our ongoing projects. Please feel free to reach out to us at your earliest convenience so we can address this matter directly.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        Thank you for your attention, and I look forward to your reply.
 
         Best regards,
-        [Your Full Name]
-        [Your Position]
-        [Your Contact Information]
-    """.trimIndent()
+
+        Ali Moussa
+        Android Developer
+        ali999.1mousa@gmail.com
+        """.trimIndent()
 ) {
     val mIntent = Intent(Intent.ACTION_SENDTO).apply {
         data = Uri.parse("mailto:")
