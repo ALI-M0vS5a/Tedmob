@@ -32,6 +32,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -151,7 +152,6 @@ fun LogicScreen(
                     onValueChange = {
                         email = it
                         emailError = email.isBlank()
-                        updateEmail(it)
                     },
                     isError = emailError,
                     label = { Text("Email") },
@@ -172,7 +172,6 @@ fun LogicScreen(
                     onValueChange = {
                         password = it
                         passwordError = password.isBlank()
-                        upDatePassword(it)
                     },
                     label = {
                         Text("Password")
@@ -196,14 +195,19 @@ fun LogicScreen(
                         emailError = email.isBlank()
                         passwordError = password.isBlank()
                         if (!emailError && !passwordError) {
-                            if (uiState.userData.email.isNotEmpty() && uiState.userData.password.isNotEmpty()) {
-                                navigateToMain()
-                            }
+                            updateEmail(email)
+                            upDatePassword(password)
                         }
                     },
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Text("Login")
+                }
+            }
+
+            LaunchedEffect(key1 = uiState.userData.email.isNotEmpty() && uiState.userData.password.isNotEmpty()) {
+                if (uiState.userData.email.isNotEmpty() && uiState.userData.password.isNotEmpty()) {
+                    navigateToMain()
                 }
             }
         }

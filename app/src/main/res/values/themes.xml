@@ -14,7 +14,7 @@
     </style>
 
     <style name="Theme.Tedmob.Splash" parent="NightAdjusted.Theme.Splash">
-        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_screen_sun</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/tedmob_splashscreen_logo</item>
         <item name="postSplashScreenTheme">@style/Theme.Tedmob</item>
     </style>
 
