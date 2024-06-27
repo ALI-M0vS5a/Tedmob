@@ -46,6 +46,7 @@ dependencies {
     implementation(projects.core.data)
     implementation(projects.core.common)
     implementation(projects.core.network)
+    implementation(projects.core.domain)
 
     implementation(libs.androidx.compose.material3)
     implementation(libs.accompanist.permissions)
