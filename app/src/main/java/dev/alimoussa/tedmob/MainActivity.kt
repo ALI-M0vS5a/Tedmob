@@ -38,7 +38,8 @@ class MainActivity : FragmentActivity() {
                         is Success -> {
                             splashScreen.setKeepOnScreenCondition { false }
                             if ((uiState as Success).userData.email.isEmpty() || (uiState as Success).userData.password.isEmpty()) {
-                                startActivity(Intent(this@MainActivity, LoginActivity::class.java))
+                                val intent = Intent(this@MainActivity, LoginActivity::class.java)
+                                startActivity(intent)
                                 finish()
                             }
                         }
