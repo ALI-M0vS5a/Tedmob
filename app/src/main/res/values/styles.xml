@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomBottomSheetDialog" parent="Theme.Material3.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
+    </style>
+
+    <style name="CustomBottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="materialThemeOverlay">@style/CustomMaterialThemeOverlay</item>
+    </style>
+
+    <style name="CustomMaterialThemeOverlay" parent="ThemeOverlay.Material3">
+
+    </style>
+
+</resources>

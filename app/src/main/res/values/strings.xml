@@ -3,4 +3,6 @@
     <string name="login_title">Login\n</string>
     <string name="home_screen_title">Home</string>
     <string name="profile_screen_title">Profile</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
 </resources>
