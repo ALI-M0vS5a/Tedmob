@@ -42,7 +42,7 @@ internal class RetrofitNiaNetwork @Inject constructor(
             .create(RetrofitTedmobNetworkApi::class.java)
     }
 
-    override suspend fun getPots(ids: List<String>?): List<NetworkPost> =
+    override suspend fun getPots(): List<NetworkPost> =
         networkApi.getPosts()
 
 }
