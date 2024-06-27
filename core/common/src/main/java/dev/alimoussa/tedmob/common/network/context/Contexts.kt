@@ -19,30 +19,31 @@ fun Context.sendEmail(
         [Your Contact Information]
     """.trimIndent()
 ) {
-    val mIntent = Intent(Intent.ACTION_SEND)
-    mIntent.data = Uri.parse("mailto:")
-    mIntent.type = "text/plain"
-    mIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf(recipient))
-    mIntent.putExtra(Intent.EXTRA_SUBJECT, subject)
-    mIntent.putExtra(Intent.EXTRA_TEXT, message)
+    val mIntent = Intent(Intent.ACTION_SENDTO).apply {
+        data = Uri.parse("mailto:")
+        putExtra(Intent.EXTRA_EMAIL, arrayOf(recipient))
+        putExtra(Intent.EXTRA_SUBJECT, subject)
+        putExtra(Intent.EXTRA_TEXT, message)
+    }
 
     try {
-        startActivity(Intent.createChooser(mIntent, "Select Email Application"))
+        startActivity(Intent.createChooser(mIntent, "Choose an email client:"))
     } catch (e: Exception) {
-        Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "Error: ${e.message}", Toast.LENGTH_LONG).show()
     }
 }
 
 
 fun Context.dialPhone(phone: String) {
     if (phone.isNotEmpty()) {
-        val intent = Intent(Intent.ACTION_SEND).apply {
+        val intent = Intent(Intent.ACTION_DIAL).apply {
             data = Uri.parse("tel:$phone")
         }
         try {
-            startActivity(Intent.createChooser(intent, "Select Dialer Application"))
+            startActivity(Intent.createChooser(intent, "Choose a dialer client:"))
         } catch (e: Exception) {
-            Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Error: ${e.message}", Toast.LENGTH_LONG).show()
         }
     }
 }
+
